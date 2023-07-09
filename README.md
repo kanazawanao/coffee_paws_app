@@ -14,3 +14,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+```bash
+docker run --rm -v ${PWD}:/local openapitools/openapi-generator-cli:v6.6.0 generate -g dart-dio -i /local/api/openapi/openapi.yml -o /local/lib/api/clients -p pubName=tripig_api
+```
