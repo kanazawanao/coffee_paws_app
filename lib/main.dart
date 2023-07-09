@@ -13,6 +13,7 @@ class TripigApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      darkTheme: buildDarkThemeDefault(context),
       theme: buildThemeDefault(context),
       home: const Text('Home'),
     );
