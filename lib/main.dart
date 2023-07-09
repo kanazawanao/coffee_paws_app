@@ -15,7 +15,12 @@ class TripigApp extends StatelessWidget {
     return MaterialApp(
       darkTheme: buildDarkThemeDefault(context),
       theme: buildThemeDefault(context),
-      home: const Text('Home'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Tripig'),
+        ),
+        body: const Text('Home'),
+      ),
     );
   }
 }
