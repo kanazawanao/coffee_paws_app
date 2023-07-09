@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:tripig_app/config/default.dart';
 
 void main() {
-  runApp(
-    const TripigApp(),
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]).then(
+    (value) {
+      runApp(
+        const TripigApp(),
+      );
+    },
   );
 }
 
