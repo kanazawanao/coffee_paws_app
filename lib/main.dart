@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:tripig_app/config/default.dart';
+import 'package:tripig_app/screens/sign_in.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,12 +22,7 @@ class TripigApp extends StatelessWidget {
     return MaterialApp(
       darkTheme: buildDarkThemeDefault(context),
       theme: buildThemeDefault(context),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Tripig'),
-        ),
-        body: const Text('Home'),
-      ),
+      home: const SignInScreen(),
     );
   }
 }
