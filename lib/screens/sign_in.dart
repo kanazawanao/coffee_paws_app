@@ -21,24 +21,32 @@ class _SignInScreenState extends State<SignInScreen> {
           'Sign In',
         ),
       ),
-      body: Column(
-        children: [
-          TextField(
-            controller: _emailController,
-            decoration: const InputDecoration(
-              label: Text('E-mail'),
-            ),
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('images/background.png'),
+            fit: BoxFit.cover,
           ),
-          const SizedBox(
-            height: 12,
-          ),
-          TextField(
-            controller: _passwordController,
-            decoration: const InputDecoration(
-              label: Text('Password'),
+        ),
+        child: Column(
+          children: [
+            TextField(
+              controller: _emailController,
+              decoration: const InputDecoration(
+                label: Text('E-mail'),
+              ),
             ),
-          )
-        ],
+            const SizedBox(
+              height: 12,
+            ),
+            TextField(
+              controller: _passwordController,
+              decoration: const InputDecoration(
+                label: Text('Password'),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
