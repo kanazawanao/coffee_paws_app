@@ -16,7 +16,7 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 ```bash
-docker run --rm -v ${PWD}:/local openapitools/openapi-generator-cli:v6.6.0 generate -g dart-dio -i /local/api/openapi/openapi.yml -o /local/openapi/clients -p pubName=coffee_paws_api
+docker run --rm -v ${PWD}:/local openapitools/openapi-generator-cli:v6.6.0 generate -g dart-dio -i /local/api/openapi/openapi.yml -o /local/openapi/clients -p pubName=coffee_paws_app_api
 
 cd openapi/clients
 flutter pub get
