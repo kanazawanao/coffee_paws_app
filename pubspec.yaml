@@ -1,4 +1,4 @@
-name: tripig_app
+name: coffee_paws_app
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^5.1.0
   firebase_auth: ^4.6.3
+  flutter_riverpod: ^2.3.6
 
 dev_dependencies:
   flutter_test:

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 var kColorScheme = ColorScheme.fromSeed(
-  seedColor: Colors.lightBlue,
+  seedColor: Colors.blueAccent,
 );
 
 var kDarkColorScheme = ColorScheme.fromSeed(
